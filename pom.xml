@@ -48,6 +48,13 @@
         <plugin>
             <groupId>org.glassfish</groupId>
             <artifactId>maven-embedded-glassfish-plugin</artifactId>
+            <dependencies>
+                <dependency>
+                    <groupId>org.osgi</groupId>
+                    <artifactId>org.osgi.core</artifactId>
+                    <version>4.2.0</version>
+                </dependency>
+            </dependencies>
             <configuration>
                 <goalPrefix>glassfish</goalPrefix>
                 <app>target/quickstart.war</app>
