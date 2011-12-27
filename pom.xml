@@ -27,6 +27,16 @@
       <scope>provide</scope>
     </dependency>
     <dependency>
+        <groupId>org.richfaces.ui</groupId>
+        <artifactId>richfaces-components-ui</artifactId>
+        <version>4.1.0.Final</version>
+    </dependency>
+    <dependency>
+        <groupId>org.richfaces.core</groupId>
+        <artifactId>richfaces-core-impl</artifactId>
+        <version>4.1.0.Final</version>
+    </dependency>
+    <dependency>
         <groupId>javax.enterprise</groupId>
         <artifactId>cdi-api</artifactId>
         <version>1.0-SP2</version>
@@ -36,6 +46,12 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+  <repositories>
+      <repository>
+          <id>jboss</id>
+          <url>http://repository.jboss.org/nexus/content/groups/public-jboss</url>
+      </repository>
+  </repositories>
   <pluginRepositories>
       <pluginRepository>
           <id>Glassfish</id>
