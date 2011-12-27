@@ -36,9 +36,33 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+  <pluginRepositories>
+      <pluginRepository>
+          <id>Glassfish</id>
+          <url>http://download.java.net/maven/glassfish</url>
+      </pluginRepository>
+  </pluginRepositories>
   <build>
     <finalName>quickstart</finalName>
     <plugins>
+        <plugin>
+            <groupId>org.glassfish</groupId>
+            <artifactId>maven-embedded-glassfish-plugin</artifactId>
+            <configuration>
+                <goalPrefix>glassfish</goalPrefix>
+                <app>target/quickstart.war</app>
+                <port>8080</port>
+                <contextRoot>/app</contextRoot>
+            </configuration>
+            <executions>
+                <execution>
+                    <phase>install</phase>
+                    <goals>
+                        <goal>run</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
