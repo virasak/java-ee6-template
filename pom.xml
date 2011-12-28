@@ -30,16 +30,9 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.sun.faces</groupId>
-      <artifactId>jsf-api</artifactId>
-      <version>2.0.0-b08</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.sun.faces</groupId>
-      <artifactId>jsf-impl</artifactId>
-      <version>2.0.0-b08</version>
-      <scope>provide</scope>
+        <groupId>javax</groupId>
+        <artifactId>javaee-web-api</artifactId>
+        <version>6.0</version>
     </dependency>
     <dependency>
         <groupId>org.richfaces.ui</groupId>
@@ -48,12 +41,6 @@
     <dependency>
         <groupId>org.richfaces.core</groupId>
         <artifactId>richfaces-core-impl</artifactId>
-    </dependency>
-    <dependency>
-        <groupId>javax.enterprise</groupId>
-        <artifactId>cdi-api</artifactId>
-        <version>1.0-SP2</version>
-        <scope>provided</scope>
     </dependency>
   </dependencies>
   <repositories>
